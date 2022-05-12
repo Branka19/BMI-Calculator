@@ -5,5 +5,8 @@ public class MainClass {
 				
 		BMICalculation bmiCalculation = new BMICalculation();
 		bmiCalculation.calculateBMI();
+		
+		BMRCalculation bmrCalculation = new BMRCalculation();
+		bmrCalculation.calculateBMR(bmiCalculation.getWeight(), bmiCalculation.getHeight());
 	}
 }
